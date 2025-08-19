@@ -110,3 +110,19 @@ hr.sep{ border:0; border-top:1px solid var(--line); margin:36px 0; }
 /* スキップリンク（アクセシビリティ） */
 .skip{ position:absolute; left:-999px; top:auto; }
 .skip:focus{ left:8px; top:8px; background:#fff; border:2px solid #000; padding:8px; z-index:1000; }
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-decoration: none; /* リンクの下線消す */
+  color: inherit; /* 色は親要素に合わせる */
+}
+
+.brand .subtitle {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  color: #555; /* 控えめなグレー */
+  margin-top: 0.2em;
+}
