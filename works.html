@@ -7,36 +7,63 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
 <header class="site-header wrap">
   <a class="brand" href="index.html">兼田敏の瓶</a>
   <nav class="nav">
     <a href="index.html">ホーム</a>
     <a href="profile.html">プロフィール</a>
-    <a href="works.html">作品リスト</a>
+    <a href="works.html" aria-current="page">作品リスト</a>
     <a href="photography.html">Photography</a>
     <a href="news.html">お知らせ</a>
     <a href="contact.html">お問い合わせ</a>
   </nav>
 </header>
+
 <main class="wrap">
-<section><h1>作品リスト</h1><small class="sub">Works</small><div class="grid three"><a class="card" href="#"><img src="assets/sample-work.jpg"><h3>作品1</h3></a><a class="card" href="#"><img src="assets/sample-work.jpg"><h3>作品2</h3></a><a class="card" href="#"><img src="assets/sample-work.jpg"><h3>作品3</h3></a></div></section>
+  <!-- セクション①：カード一覧 -->
+  <section>
+    <hgroup>
+      <h1>作品リスト</h1>
+      <small class="sub">Works</small>
+    </hgroup>
+
+    <div class="grid three">
+      <a class="card" href="#">
+        <img src="assets/sample-work.jpg" alt="作品1" loading="lazy">
+        <h3>作品1</h3>
+      </a>
+      <a class="card" href="#">
+        <img src="assets/sample-work.jpg" alt="作品2" loading="lazy">
+        <h3>作品2</h3>
+      </a>
+      <a class="card" href="#">
+        <img src="assets/sample-work.jpg" alt="作品3" loading="lazy">
+        <h3>作品3</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- セクション②：個別紹介 -->
+  <section>
+    <hgroup>
+      <h2>がちょうの行進曲</h2>
+      <small class="sub">March of the Geese</small>
+    </hgroup>
+
+    <p class="lead">
+      兼田敏（Bin Kaneda）作曲の「がちょうの行進曲」は、やさしいメロディで
+      がちょうたちが行進する情景が目に浮かぶような作品。<br>
+      2015–2016年のABRSMグレード2ピアノ課題曲としても採用され、<br>
+      英国でも評価されたピアノ教育曲です。
+    </p>
+
+    <p>
+      ▶ <a href="リンク先楽譜ページ">楽譜を確認（音楽之友社）</a>
+    </p>
+  </section>
 </main>
-<section class="wrap">
-  <hgroup>
-    <h2>がちょうの行進曲</h2>
-    <small class="sub">March of the Geese</small>
-  </hgroup>
-  <p class="lead">
-   <section> 兼田敏（Bin Kaneda）作曲の「がちょうの行進曲」は、やさしいメロディで
-    がちょうたちが行進する情景が目に浮かぶような作品。<br>
-    2015–2016年のABRSMグレード2ピアノ課題曲としても採用され、<br>
-    英国でも評価されたピアノ教育曲です。
-  </p>
-  <p> 
-    ▶ <a href="リンク先楽譜ページ">楽譜を確認（音楽之友社）</a>
-  </p>
-</section>
-  
+
 <footer class="site-footer wrap">
   <small>© <span id="y"></span> 兼田音楽事務所</small>
 </footer>
