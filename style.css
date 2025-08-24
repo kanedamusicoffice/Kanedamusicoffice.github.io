@@ -178,3 +178,36 @@ hr.sep{ border:0; border-top:1px solid var(--line); margin:36px 0; }
   }
   .to-top{ justify-self:start; }
 }
+/* ===== Footer (Simple ver.) ===== */
+.site-footer{
+  border-top:1px solid var(--line);
+  padding:40px 0 60px;
+  color:var(--muted);
+}
+
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+}
+
+.footer-brand strong{ color: var(--ink); }
+.footer-sub{ font-size:.9rem; margin-top:4px; }
+
+.to-top{
+  border:1px solid var(--line);
+  background:#fff;
+  padding:8px 10px;
+  border-radius:8px;
+  cursor:pointer;
+  font:inherit;
+}
+.to-top:hover{ background:rgba(0,0,0,.04); }
+
+.footer-copy{
+  display:block;
+  text-align:center;
+  margin-top:24px;
+}
