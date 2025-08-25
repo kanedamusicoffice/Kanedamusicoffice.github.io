@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>assets path test</title>
+<h1>assets path test</h1>
+
+<p>絶対パス（/assets/...）</p>
+<img src="/assets/profile_1.jpg?v=333" alt="/assets/profile_1.jpg" width="300">
+<ul>
+  <li><a href="/assets/profile_1.jpg?v=333">/assets/profile_1.jpg?v=333 を開く</a></li>
+</ul>
+
+<hr>
+
+<p>相対パス（assets/...）</p>
+<img src="assets/profile_1.jpg?v=444" alt="assets/profile_1.jpg" width="300">
+<ul>
+  <li><a href="assets/profile_1.jpg?v=444">assets/profile_1.jpg?v=444 を開く</a></li>
+</ul>
+
+<hr>
+
+<p>ルート直下（/profile_1.jpg）</p>
+<img src="/profile_1.jpg?v=555" alt="/profile_1.jpg" width="300">
+<ul>
+  <li><a href="/profile_1.jpg?v=555">/profile_1.jpg?v=555 を開く</a></li>
+</ul>
+
+<p>※ ?v= 数字 はキャッシュ無効化のため</p>
