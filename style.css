@@ -204,3 +204,30 @@ main.wrap, .wrap main{ padding-top: 6px; }
   .site-header{ background: #0f1115e6; }
   .nav.nav-top a:hover{ background:#151922; }
 }
+/* --- Hero under header --- */
+.hero-site{ padding: 28px 0 18px; }
+.hero-site h1{ margin: 0; font-size: clamp(24px, 4.2vw, 40px); line-height: 1.25; }
+.hero-site .sub{ margin-top: 6px; }
+
+.hero-image{
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+  object-fit: cover;
+  /* 任意：一定のアスペクト比でトリミングしたい場合 */
+  /* aspect-ratio: 16 / 9; height: auto; */
+}
+
+/* sticky header に飲み込まれないよう微調整 */
+.site-header{ position: sticky; top: 0; z-index: 1000; background: var(--bg); border-bottom:1px solid var(--line); }
+.site-header .wrap{ padding: 10px var(--space); }
+.nav.nav-top{ display:flex; justify-content:center; gap:12px; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; }
+.nav.nav-top::-webkit-scrollbar{ display:none; }
+.nav.nav-top a{ white-space:nowrap; padding:6px 10px; border-radius:8px; font-size:.95rem; }
+.nav.nav-top a:hover{ background:rgba(0,0,0,.05); }
+@media (prefers-color-scheme: dark){
+  .site-header{ background:#0f1115e6; }
+  .nav.nav-top a:hover{ background:#151922; }
+}
