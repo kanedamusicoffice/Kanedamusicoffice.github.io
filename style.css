@@ -293,7 +293,7 @@ main.wrap, .wrap main{ padding-top: 6px; }
 /* スマホ画面用 (幅600px以下) */
 @media (max-width: 600px){
   .nav{
-    gap:10px;              /* 間隔を狭める */
+    gap:8px;              /* 間隔を狭める */
   }
   .nav a{
     font-size: 0.8rem;     /* ← スマホ時にさらに小さく */
