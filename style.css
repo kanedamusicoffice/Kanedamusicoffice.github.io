@@ -300,3 +300,14 @@ main.wrap, .wrap main{ padding-top: 6px; }
     padding:3px 5px;       /* 余白も少し縮める */
   }
 }
+.hero-site {    /＊画像中央揃え＊/
+  text-align: center;
+  margin: 40px auto;
+}
+
+.hero-site .hero-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 12px;
+}
