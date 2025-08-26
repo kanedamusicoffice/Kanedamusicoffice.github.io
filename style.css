@@ -311,3 +311,22 @@ main.wrap, .wrap main{ padding-top: 6px; }
   margin: 0 auto 20px;
   border-radius: 12px;
 }
+/* 小さめの中央寄せポートレート */
+.hero-portrait {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hero-portrait .hero-image-small {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;   /* ←ここで大きさ調整（例: 200px） */
+  height: auto;
+  border-radius: 50%; /* 丸くしたい場合。四角でOKならこの行は削除 */
+}
+
+.hero-portrait figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
