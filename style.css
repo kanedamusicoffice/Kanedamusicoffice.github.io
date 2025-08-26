@@ -280,3 +280,23 @@ main.wrap, .wrap main{ padding-top: 6px; }
 }
 
 .nav::-webkit-scrollbar{ display:none; } /* ← スクロールバー非表示（iOS/Chrome） */
+/* ===== Header / Nav (responsive) ===== */
+.nav a{
+  text-decoration:none;
+  color:#333;
+  padding:6px 8px;
+  border-radius:8px;
+  white-space:nowrap;
+  font-size: 0.95rem; /* ← 基本サイズ少し小さめ */
+}
+
+/* スマホ画面用 (幅600px以下) */
+@media (max-width: 600px){
+  .nav{
+    gap:10px;              /* 間隔を狭める */
+  }
+  .nav a{
+    font-size: 0.8rem;     /* ← スマホ時にさらに小さく */
+    padding:4px 6px;       /* 余白も少し縮める */
+  }
+}
