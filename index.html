@@ -21,21 +21,20 @@
 <body>
 <a href="#main" class="skip">本文へ移動</a>
 
-<header class="site-header wrap">
-  <a class="brand" href="index.html">
-    兼田敏の瓶
-    <span class="subtitle">Bin Kaneda's Official Website</span>
-  </a>
-  <nav class="nav">
-    <a href="index.html">ホーム</a>
-    <a href="profile.html">プロフィール</a>
-    <a href="works.html">作品リスト</a>
-    <a href="photography.html">Photography</a>
-    <a href="news.html">お知らせ</a>
-    <a href="contact.html">お問い合わせ</a>
-  </nav>
+<!-- 先頭にあった <header class="site-header wrap"> ... を丸ごとこれに置き換え -->
+<header class="site-header" role="navigation">
+  <div class="wrap">
+    <nav class="nav nav-top" aria-label="グローバルナビゲーション">
+      <a href="index.html">ホーム</a>
+      <a href="profile.html">プロフィール</a>
+      <a href="works.html">作品リスト</a>
+      <a href="photography.html">Photography</a>
+      <a href="news.html">お知らせ</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
 </header>
-
+  
 <main id="main" class="wrap">
 
   <!-- ヒーロー：大きめ見出し＋リード -->
