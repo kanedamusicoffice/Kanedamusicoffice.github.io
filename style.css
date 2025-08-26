@@ -256,3 +256,27 @@ main.wrap, .wrap main{ padding-top: 6px; }
   border-radius: var(--radius);
   object-fit: cover;
 }
+/* ===== Header / Nav ===== */
+.site-header{
+  display:flex;
+  justify-content:center; /* ← スマホ中央寄せに */
+  padding:14px 0;
+  border-bottom:1px solid var(--line);
+  overflow-x:auto;        /* ← 横スクロール許可 */
+}
+
+.nav{
+  display:flex;
+  gap:14px;
+  flex-wrap:nowrap;       /* ← 折り返しなし */
+}
+
+.nav a{
+  text-decoration:none;
+  color:#333;
+  padding:6px 8px;
+  border-radius:8px;
+  white-space:nowrap;     /* ← 改行せず横スクロールに */
+}
+
+.nav::-webkit-scrollbar{ display:none; } /* ← スクロールバー非表示（iOS/Chrome） */
