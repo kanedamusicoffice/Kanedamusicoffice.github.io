@@ -330,3 +330,11 @@ main.wrap, .wrap main{ padding-top: 6px; }
   font-size: 0.95rem;
   color: var(--muted);
 }
+.hero-portrait .hero-image-small {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  background: var(--bg);   /* ↑ページの背景色で塗る */
+}
