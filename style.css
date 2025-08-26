@@ -231,3 +231,28 @@ main.wrap, .wrap main{ padding-top: 6px; }
   .site-header{ background:#0f1115e6; }
   .nav.nav-top a:hover{ background:#151922; }
 }
+/* --- Hero central alignment --- */
+.hero-site{
+  padding: 28px 0 18px;
+  text-align: center;       /* ←中央揃え */
+}
+
+.hero-site h1{
+  margin: 0;
+  font-size: clamp(24px, 4.2vw, 40px);
+  line-height: 1.25;
+}
+
+.hero-site .sub{
+  margin-top: 6px;
+  display: block;           /* サブタイトルも改行して中央揃え */
+}
+
+.hero-site .hero-image{
+  margin: 16px auto 0;      /* 画像を中央に */
+  width: auto;              /* 横幅は自然サイズ */
+  max-width: 100%;          /* 画面からはみ出さないように */
+  height: auto;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
