@@ -296,7 +296,7 @@ main.wrap, .wrap main{ padding-top: 6px; }
     gap:8px;              /* 間隔を狭める */
   }
   .nav a{
-    font-size: 0.8rem;     /* ← スマホ時にさらに小さく */
-    padding:4px 6px;       /* 余白も少し縮める */
+    font-size: 0.7rem;     /* ← スマホ時にさらに小さく */
+    padding:3px 5px;       /* 余白も少し縮める */
   }
 }
