@@ -148,3 +148,59 @@ hr.sep{ border:0; border-top:1px solid var(--line); margin:36px 0; }
   .card{ border-color:#242938; }
   .sub, .lead, figcaption, .post-meta{ color:#b9c0d0; }
 }
+
+/* === ヘッダーを最上部固定・横一列 === */
+.site-header{
+  position: sticky; /* ずっと上に貼り付く。完全固定なら fixed に */
+  top: 0; z-index: 1000;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: saturate(1.1) blur(2px); /* 対応ブラウザで少しリッチに */
+}
+.site-header .wrap{ padding: 10px var(--space); }
+
+.nav.nav-top{
+  display: flex; align-items: center; justify-content: center;
+  gap: 12px; flex-wrap: nowrap;           /* 一列 */
+  overflow-x: auto; overscroll-behavior-x: contain; /* 幅が狭いときは横スクロール */
+  scrollbar-width: none;                   /* Firefoxのスクロールバー非表示（任意） */
+}
+.nav.nav-top::-webkit-scrollbar{ display: none; } /* Safari/Chrome 非表示 */
+
+.nav.nav-top a{
+  white-space: nowrap;                     /* 折り返さない */
+  text-decoration: none;
+  color: inherit;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: .95rem;                       /* 既存より少し小さめ */
+}
+.nav.nav-top a:hover{ background: rgba(0,0,0,.05); }
+
+/* ヒーロー（サイト名＋サブタイトル＋画像） */
+.hero-site{
+  padding: 28px 0 18px;
+}
+.hero-site h1{
+  margin: 0;
+  font-size: clamp(24px, 4.2vw, 40px);
+  line-height: 1.25;
+}
+.hero-site .sub{
+  margin-top: 6px;
+}
+.hero-site .hero-image{
+  margin-top: 16px;
+  border-radius: var(--radius);
+  width: 100%; height: auto; display: block;
+  object-fit: cover;
+}
+
+/* ヘッダーがstickyで上に重ならないよう、余白を少し上げる */
+main.wrap, .wrap main{ padding-top: 6px; }
+
+/* ダークモードでヘッダーの背景を少し濃く */
+@media (prefers-color-scheme: dark){
+  .site-header{ background: #0f1115e6; }
+  .nav.nav-top a:hover{ background:#151922; }
+}
