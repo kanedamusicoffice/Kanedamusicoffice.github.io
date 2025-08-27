@@ -338,3 +338,17 @@ main.wrap, .wrap main{ padding-top: 6px; }
   border-radius: 50%;
   background: var(--bg);   /* ↑ページの背景色で塗る */
 }
+/* ===== Profile page custom ===== */
+.profile-title {
+  font-size: 2.2rem;   /* 漢字を大きくする */
+  font-weight: 700;    /* 太字 */
+  line-height: 1.3;
+  text-align: center;  /* 中央揃え（お好みで） */
+}
+
+.profile-title span {
+  font-size: 1.4rem;   /* 英語部分は少し小さめ */
+  font-weight: 400;
+  margin-left: 0.5em;
+  color: var(--muted); /* 薄めの色 */
+}
