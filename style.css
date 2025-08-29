@@ -24,7 +24,7 @@ body::before {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: url("assets/logo_blue.png") no-repeat left center;
+  background: url("assets/logo.blue.png") no-repeat left center;
   background-size: 80%;   /* ←ここでロゴの大きさ調整 */
   opacity: 0.2;           /* ←透け感20% */
   z-index: -1;
