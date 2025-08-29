@@ -322,7 +322,7 @@ main.wrap, .wrap main{ padding-top: 6px; }
   margin: 0 auto;
   max-width: 200px;   /* ←ここで大きさ調整（例: 200px） */
   height: auto;
-  border-radius: 50%; /* 丸くしたい場合。四角でOKならこの行は削除 */
+  border-radius: 0%; /* 丸くしたい場合。０で四角、50で正円。 */
 }
 
 .hero-portrait figcaption {
