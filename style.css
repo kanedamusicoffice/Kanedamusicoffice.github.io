@@ -326,7 +326,7 @@ main.wrap, .wrap main{ padding-top: 6px; }
 }
 
 .hero-portrait figcaption {
-  margin-top: 8px;
+  margin-top: 9px;
   font-size: 0.95rem;
   color: var(--muted);
 }
@@ -335,7 +335,7 @@ main.wrap, .wrap main{ padding-top: 6px; }
   margin: 0 auto;
   max-width: 200px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 0%;
   background: var(--bg);   /* ↑ページの背景色で塗る */
 }
 /* ===== Profile page custom ===== */
