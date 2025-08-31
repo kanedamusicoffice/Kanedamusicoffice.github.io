@@ -368,23 +368,3 @@ main.wrap, .wrap main{ padding-top: 6px; }
   margin-left: 0.5em;
   color: var(--muted); /* 薄めの色 */
 }
-/* ===== 背景ロゴ：左寄せ・常時20%・固定 ===== */
-html { background-color: var(--bg); }     /* ベース色 */
-
-body{
-  position: relative;                     /* 中身を前面に */
-  background: transparent;                /* 背景は透明に */
-  z-index: 1;
-}
-
-/* 背景は html::before に敷くと安定 */
-html::before{
-  content:"";
-  position: fixed;
-  inset: 0;                               /* top/right/bottom/left:0 */
-  background: url("assets/logo.blue.png") no-repeat left center;
-  background-size: 80%;                   /* ←大きさは 60〜100% で調整 */
-  opacity: .2;                            /* ←透け感20% */
-  z-index: 0;                             /* body(=1) の下に敷く */
-  pointer-events: none;
-}
