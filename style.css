@@ -368,3 +368,9 @@ main.wrap, .wrap main{ padding-top: 6px; }
   margin-left: 0.5em;
   color: var(--muted); /* 薄めの色 */
 }
+.brand img.logo {
+  display: block;
+  height: 40px;   /* ← ロゴの高さ調整 */
+  width: auto;
+  object-fit: contain;
+}
