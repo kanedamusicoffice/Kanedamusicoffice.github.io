@@ -1,41 +1,47 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Photography | 兼田敏の瓶</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photography | 兼田敏の瓶</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+<!-- ==== ヘッダー ==== -->
 <header class="site-header">
   <a class="brand" href="index.html">
     <img src="assets/logo.png" alt="兼田敏の瓶 ロゴ">
   </a>
   <nav class="nav">
     <a href="index.html">ホーム</a>
-    <a href="profile.html" aria-current="page">プロフィール</a>
+    <a href="profile.html">プロフィール</a>
     <a href="works.html">作品リスト</a>
-    <a href="photography.html">Photography</a>
+    <a href="photography.html" aria-current="page">Photography</a>
     <a href="news.html">お知らせ</a>
     <a href="contact.html">お問い合わせ</a>
   </nav>
 </header>
-  
+
+<!-- ==== 本文 ==== -->
 <main class="wrap">
-<section><h1>写真作品</h1><small class="sub">Photography</small><img src="assets/sample-photo.jpg"></section>
+  <section>
+    <h1>Photography</h1>
+    <small class="sub">写真アーカイブ</small>
+
+    <p><img src="assets/logo.png" alt="兼田敏の瓶 ロゴ"></p>
+  </section>
 </main>
-<!-- ここから下がフッター（全ページ共通） -->
+
+<!-- ==== フッター ==== -->
 <footer class="site-footer wrap" role="contentinfo">
   <div class="footer-grid">
     <div class="footer-brand">
       <strong>兼田敏の瓶</strong>
       <div class="footer-sub">Bin Kaneda's Official Website</div>
     </div>
-
     <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ページ先頭へ戻る">↑ Top</button>
   </div>
-
   <small class="footer-copy">© <span id="y"></span> 兼田音楽事務所</small>
 </footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
