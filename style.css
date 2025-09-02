@@ -370,7 +370,7 @@ main.wrap, .wrap main{ padding-top: 6px; }
 }
 .brand img.logo {
   display: block;
-  height: 60px;   /* ← ロゴの高さ調整 */
+  height: 50px;   /* ← ロゴの高さ調整 */
   width: auto;
   object-fit: contain;
 }
