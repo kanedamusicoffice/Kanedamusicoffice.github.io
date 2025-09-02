@@ -368,9 +368,18 @@ main.wrap, .wrap main{ padding-top: 6px; }
   margin-left: 0.5em;
   color: var(--muted); /* 薄めの色 */
 }
-.brand img.logo {
-  display: block;
-  height: 50px;   /* ← ロゴの高さ調整 */
-  width: auto;
-  object-fit: contain;
+/* ===== Header / Nav ===== */
+.site-header{
+  display:flex;
+  align-items:center;       /* ロゴとナビを上下中央に */
+  justify-content:space-between;
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+  height:80px;              /* ← ヘッダーの高さを固定（少し余裕） */
+}
+
+.brand img{
+  height:60px;              /* ← ロゴを大きめに */
+  width:auto;
+  display:block;
 }
