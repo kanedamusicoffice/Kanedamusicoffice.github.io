@@ -444,3 +444,5 @@ main.wrap, .wrap main{ padding-top: 6px; }
 @media (max-width: 600px){
   .photo-grid{ gap:14px; }
 }
+/* ===== ロゴ透過用===== */
+img, .hero-image, .hero-portrait .hero-image-small { background: transparent !important; }
