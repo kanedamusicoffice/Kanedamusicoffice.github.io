@@ -446,3 +446,20 @@ main.wrap, .wrap main{ padding-top: 6px; }
 }
 /* ===== ロゴ透過用===== */
 img, .hero-image, .hero-portrait .hero-image-small { background: transparent !important; }
+
+/* ヘッダー全体を横幅いっぱい白に */
+.site-header{
+  width: 100%;
+  background: #fff;               /* ← 常に白 */
+  border-bottom: 1px solid var(--line);
+}
+
+/* 内側のレイアウト */
+.header-inner{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 10px var(--space);
+  max-width: var(--max);
+  margin: 0 auto;
+}
