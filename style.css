@@ -467,10 +467,6 @@ img, .hero-image, .hero-portrait .hero-image-small { background: transparent !im
 }
 
 /* ナビゲーション */
-.nav {
-  display: flex;
-  gap: 30px;                    /* リンク間の等間隔 */
-}
 
 .nav a {
   text-decoration: none;
