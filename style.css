@@ -463,3 +463,8 @@ img, .hero-image, .hero-portrait .hero-image-small { background: transparent !im
   max-width: var(--max);
   margin: 0 auto;
 }
+.logo {
+  height: 50px;   /* ← indexと同じ高さに合わせる */
+  width: auto;
+  display: block;
+}
