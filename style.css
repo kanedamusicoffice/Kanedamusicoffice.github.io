@@ -456,12 +456,27 @@ img, .hero-image, .hero-portrait .hero-image-small { background: transparent !im
 
 /* 内側のレイアウト */
 .header-inner {
+ /* ヘッダー全体 */
+.site-header {
   display: flex;
-  justify-content: space-between; /* 左にロゴ・右にメニュー */
-  align-items: center;            /* ← これで縦中央に揃う */
-  padding: 10px var(--space);
-  max-width: var(--max);
-  margin: 0 auto;
+  align-items: center;          /* 縦の中心揃え */
+  justify-content: space-between; /* 左：ロゴ / 右：ナビを両端配置 */
+  padding: 10px 20px;           /* 上下と左右の余白 */
+  background: #fff;             /* 一列まるごと白背景 */
+  border-bottom: 1px solid var(--line);
+}
+
+/* ナビゲーション */
+.nav {
+  display: flex;
+  gap: 30px;                    /* リンク間の等間隔 */
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
 }
 .logo {
   height: 50px;   /* ← indexと同じ高さに合わせる */
