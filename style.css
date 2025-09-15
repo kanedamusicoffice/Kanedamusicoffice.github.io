@@ -455,10 +455,10 @@ img, .hero-image, .hero-portrait .hero-image-small { background: transparent !im
 }
 
 /* 内側のレイアウト */
-.header-inner{
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
+.header-inner {
+  display: flex;
+  justify-content: space-between; /* 左にロゴ・右にメニュー */
+  align-items: center;            /* ← これで縦中央に揃う */
   padding: 10px var(--space);
   max-width: var(--max);
   margin: 0 auto;
