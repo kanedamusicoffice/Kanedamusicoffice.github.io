@@ -218,3 +218,19 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
   .site-footer, .site-header, .card{ border-color:#242938; }
   .sub, .lead, figcaption, .post-meta{ color:#b9c0d0; }
 }
+
+/* ===== ヘッダー修正 ===== */
+/* ヘッダーを横並びに統一 */
+.site-header .wrap {
+  display: flex;
+  align-items: center;       /* 上下の位置を中央揃え */
+  justify-content: space-between; /* 左右に分ける */
+  gap: 20px;                 /* ロゴとナビの間に余白 */
+}
+
+/* ロゴ画像を固定高さにして、文字と高さを揃える */
+.brand img {
+  height: 40px;              /* ←好みで調整（例: 40〜56px） */
+  width: auto;
+  display: block;
+}
