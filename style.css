@@ -489,9 +489,17 @@ img, .hero-image, .hero-portrait .hero-image-small { background: transparent !im
   border-radius: 6px;
 }
 
+/* ======作品リスト、注記の表示===== */
 
 .note {
 　font-weight: bold;    /* 太字にして存在感アップ */
   color: #444;           /* 黒より少し柔らかい色 */
   margin-top: 1.5em;     /* 上に余白を追加 */
+}
+.note-sep {
+  border-top: 1px solid #ddd;   /* 上に薄い線を追加 */
+  margin-top: 1.5em;            /* 上に余白 */
+  padding-top: 0.8em;           /* 線と文字の間の余白 */
+  font-size: 0.9em;             /* 少し小さめで控えめに */
+  color: #666;                  /* グレーで柔らかく */
 }
