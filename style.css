@@ -226,6 +226,7 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
   align-items: center;       /* 上下の位置を中央揃え */
   justify-content: space-between; /* 左右に分ける */
   gap: 20px;                 /* ロゴとナビの間に余白 */
+    height: 100%;               /* 親の高さを継承 */
 }
 
 /* ロゴ画像を固定高さにして、文字と高さを揃える */
@@ -243,12 +244,5 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
 }
 .site-header {
   height: 68px;              /* 全ページで共通の高さに固定 */
-  display: flex;
 }
 
-.site-header .wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;               /* 親の高さを継承 */
-}
