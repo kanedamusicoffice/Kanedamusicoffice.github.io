@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- トップページ -->
+  <url>
+    <loc>https://kaneda-music-office.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- プロフィールページ -->
+  <url>
+    <loc>https://kaneda-music-office.com/profile.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 作品リストページ -->
+  <url>
+    <loc>https://kaneda-music-office.com/works.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 写真ページ -->
+  <url>
+    <loc>https://kaneda-music-office.com/photo.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ニュースページ -->
+  <url>
+    <loc>https://kaneda-music-office.com/news.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- お問い合わせページ -->
+  <url>
+    <loc>https://kaneda-music-office.com/contact.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
