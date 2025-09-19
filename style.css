@@ -234,3 +234,10 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
   width: auto;
   display: block;
 }
+
+/* index のみ中央揃え（body に .p-home を付けるのがオススメ） */
+.p-home .site-header .wrap {
+  display: flex;
+  justify-content: center; /* ←中央寄せ */
+  align-items: center;
+}
