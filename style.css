@@ -488,3 +488,9 @@ img, .hero-image, .hero-portrait .hero-image-small { background: transparent !im
   background: var(--bg); /* ← ページ背景色と同化 */
   border-radius: 6px;
 }
+.note {
+  font-weight: normal;   /* 見出しだけど本文っぽく */
+  font-style: italic;    /* 斜体で余韻を出す */
+  color: #444;           /* 黒より少し柔らかい色 */
+  margin-top: 1.5em;     /* 上に余白を追加 */
+}
