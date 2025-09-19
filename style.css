@@ -230,7 +230,7 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
 
 /* ロゴ画像を固定高さにして、文字と高さを揃える */
 .brand img {
-  height: 40px;              /* ←好みで調整（例: 40〜56px） */
+  height: 56px;              /* ←好みで調整（例: 40〜56px） */
   width: auto;
   display: block;
 }
