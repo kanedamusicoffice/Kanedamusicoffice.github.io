@@ -241,3 +241,15 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
   justify-content: center; /* ←中央寄せ */
   align-items: center;
 }
+.site-header {
+  height: 68px;              /* 全ページで共通の高さに固定 */
+  display: flex;
+  align-items: center;        /* 中身を縦方向で中央寄せ */
+}
+
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;               /* 親の高さを継承 */
+}
