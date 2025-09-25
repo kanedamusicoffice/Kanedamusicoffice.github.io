@@ -3,30 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ホーム | 兼田敏の瓶</title>
-  <meta name="description" content="作曲家・兼田敏（Bin Kaneda）に関するプロフィール・作品・資料・最新情報。">
+
+  <!-- ✅ タイトルは「兼田敏」を先頭に -->
+  <title>兼田敏 | 公式ウェブサイト（兼田敏の瓶）</title>
+
+  <!-- ✅ 説明文は自然にキーワードを含めて120〜160字目安 -->
+  <meta name="description" content="作曲家・兼田敏（Bin Kaneda）の公式ウェブサイト。プロフィール、作品リスト、関連資料、最新情報を掲載。吹奏楽を中心に活躍した兼田敏の音楽と足跡を紹介します。">
+
+  <!-- Canonical -->
   <link rel="canonical" href="https://kanedamusicoffice.github.io/" />
+
+  <!-- OGP/Twitter -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="兼田敏の瓶" />
-  <meta property="og:description" content="作曲家・兼田敏（Bin Kaneda）に関する公式情報。" />
+  <meta property="og:site_name" content="兼田敏の瓶" />
+  <meta property="og:title" content="兼田敏 | 公式ウェブサイト（兼田敏の瓶）" />
+  <meta property="og:description" content="作曲家・兼田敏（Bin Kaneda）の公式情報とアーカイブ。" />
   <meta property="og:url" content="https://kanedamusicoffice.github.io/" />
   <meta property="og:image" content="https://kanedamusicoffice.github.io/assets/ogp.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon / App icons -->
   <link rel="icon" href="/assets/favicon.ico" />
   <link rel="apple-touch-icon" href="/assets/icon-180.png" />
+
+  <!-- Fonts / CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <body class="p-home">
+
+  <!-- ✅ 構造化データ（Person の最小限）。事実が増えたら追記しよう -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "兼田 敏",
+    "alternateName": "Bin Kaneda",
+    "jobTitle": "Composer",
+    "url": "https://kanedamusicoffice.github.io/"
+  }
+  </script>
 </head>
-<body>
+
+<body class="p-home">
 <a href="#main" class="skip">本文へ移動</a>
 
-<!-- 先頭にあった <header class="site-header wrap"> ... を丸ごとこれに置き換え -->
 <header class="site-header" role="navigation">
   <div class="wrap">
     <nav class="nav nav-top" aria-label="グローバルナビゲーション">
-      <a href="index.html">ホーム</a>
+      <a href="index.html" aria-current="page">ホーム</a>
       <a href="profile.html">プロフィール</a>
       <a href="works.html">作品リスト</a>
       <a href="photography.html">Photography</a>
@@ -35,21 +59,20 @@
     </nav>
   </div>
 </header>
-<main id="main" class="wrap">
-  <!-- ヒーロー：大きめ見出し＋リード -->
-  <section class="hero-site wrap" aria-labelledby="site-title">
-  <h1 id="site-title">兼田敏の瓶</h1>
-  <small class="sub">Bin Kaneda's Official Website</small>
 
-  <!-- 小さめ画像 -->
-  <figure class="hero-portrait">
-    <img src="assets/logo.png?v=3" alt="兼田敏の瓶　ロゴ" class="hero-image-small">
-</section>
-    <h1>兼田　敏</h1>
-  <p class="sub">Bin Kaneda</p>
+<main id="main" class="wrap">
+  <!-- ✅ ヒーロー：h1はページに1つ。英名はサブに -->
+  <section class="hero-site wrap" aria-labelledby="site-title">
+    <h1 id="site-title">兼田敏の瓶</h1>
+    <small class="sub">Bin Kaneda's Official Website</small>
+
+    <figure class="hero-portrait">
+      <img src="assets/logo.png?v=3" alt="兼田敏の瓶 ロゴ" class="hero-image-small">
+    </figure>
+
     <p class="lead">
       吹奏楽を中心に活躍した作曲家・指揮者・教育者。<br>
-      このサイトは、兼田敏の作品・資料・関連情報についてご覧いただける公式ウェブサイトです。
+      本サイトは、兼田敏の作品・資料・関連情報をご覧いただける公式ウェブサイトです。
     </p>
   </section>
 
