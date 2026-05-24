@@ -415,3 +415,27 @@ img, .hero-image, .hero-portrait .hero-image-small{ background:transparent !impo
     grid-template-columns:1fr;
   }
 }
+
+.work-detail{
+  padding:40px 0;
+}
+
+.work-hero{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:36px;
+  align-items:start;
+}
+
+.work-cover{
+  margin:0;
+}
+
+.work-extra{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+  margin-top:48px;
+  padding-top:32px;
+  border-top:1px solid var(--line);
+}
